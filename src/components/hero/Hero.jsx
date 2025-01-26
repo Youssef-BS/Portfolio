@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import "./hero.css"
 import Speech from './Speech'
 import me from "../../assets/Me.png"
 import { motion } from 'motion/react'
 import { animate } from 'motion'
+import { Canvas } from '@react-three/fiber'
+import Shape from './Shape'
 
 
 const awardVariants = {
@@ -168,6 +170,11 @@ const Hero = () => {
         </motion.a>
       </div>
       <div className="bg">
+        <Canvas>
+          <Suspense fallback={<div>Loading...</div>}>
+          <Shape />
+          </Suspense> 
+        </Canvas>
         <div className="hImg">
           <img src={me} alt="" />
         </div>
