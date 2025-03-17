@@ -11,3 +11,54 @@
     justify-content: center;
 }
 
+
+.sTitle {
+    font-size: 88px;
+    margin-bottom: 24px;
+}
+
+.serviceList {
+    display: flex;
+    flex-direction: column;
+    gap : 16px;
+}
+
+.service {
+    width: 50%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #2f213f;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+
+}
+
+
+.serviceIcon {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceIcon img {
+    width: 24px;
+    height: 24px;
+}
+
+.serviceInfo h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.serviceInfo h3 {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
