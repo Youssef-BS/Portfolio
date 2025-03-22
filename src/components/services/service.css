@@ -59,6 +59,115 @@
 .serviceInfo h3 {
     font-size: 13px;
     font-weight: 300;
-    margin-bottom: 8px;
 }
 
+
+.service:nth-child(1) .serviceIcon{
+    background-color: #dd4c62;
+
+}
+.service:nth-child(2) .serviceIcon{
+    background-color: #025656;
+
+}
+.service:nth-child(3) .serviceIcon{
+    background-color: #6c5c0c;
+
+}
+
+.counterList {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px ;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.counter h1 {
+    font-size: 48px;
+    color: #dd4c62;
+}
+
+.counter p {
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 1536px) {
+
+    .service , .counterList {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+  .sTitle {
+    font-size: 128px;
+  }
+ .service {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 1024px) {
+  .sTitle {
+    font-size: 48px;
+  }
+ .service , .counterList {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+    .services {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sSection {
+        width: 100%;
+    }
+
+    .sSection.right {
+        display: none;
+    }
+}
+
+.technologies {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 48px;
+    height: 70px;
+    margin-left: 12px;
+}
+
+.technologies img {
+    width: 40px;
+    border-radius: 100%;
+    background-color: #2f213f;
+    padding: 8px;
+}
+
+.sSection.right {
+    width: 50%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #025656;
+    height: 200px;
+}
