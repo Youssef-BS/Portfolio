@@ -148,26 +148,53 @@
     justify-content: center;
     align-items: center;
     padding: 16px;
-    width: 48px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     margin-left: 12px;
 }
 
 .technologies img {
-    width: 40px;
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
-    background-color: #2f213f;
     padding: 8px;
+    background-color: #2f213f;
 }
 
 .sSection.right {
     width: 50%;
-    
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #025656;
-    height: 200px;
+    height: 50%;
+    text-align: center;
+    margin-left: 12px;
+}
+
+.web , .mobile , .desktop {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+}
+
+@media screen and (max-width: 1536px) {
+    .web , .mobile , .desktop {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .sSection.right {
+     display: none;
+    }
 }
